@@ -14,8 +14,7 @@ def resolver_case():
         print(f"❌ Erro ao abrir arquivo: {e}")
         return
 
-    # --- LIMPEZA CRÍTICA (Para evitar o erro de 'str' e 'int') ---
-    # Convertendo colunas para numérico e tratando a vírgula caso exista
+    # Convertendo colunas para numérico e tratando a vírgula 
     colunas_numericas = ['valor_parcela', 'valor_aquisicao_parcela', 'taxa_mensal', 'valor_pago']
     
     for col in colunas_numericas:
@@ -72,4 +71,3 @@ def resolver_case():
 if __name__ == "__main__":
     resolver_case()
 
-    
